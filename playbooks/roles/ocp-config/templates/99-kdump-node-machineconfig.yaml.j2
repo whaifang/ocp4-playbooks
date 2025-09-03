@@ -26,3 +26,6 @@ spec:
           name: kdump.service
   kernelArguments:
     - crashkernel="{{ crash_kernel_memory }}"
+    - systemd.unified_cgroup_hierarchy=0
+    - systemd.legacy_systemd_cgroup_controller=1 
+    - psi=1
